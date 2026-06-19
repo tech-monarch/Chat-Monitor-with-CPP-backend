@@ -22,7 +22,7 @@ COPY src/            src/
 COPY include/        include/
 
 RUN cmake -B build -DCMAKE_BUILD_TYPE=Release && \
-    cmake --build build --parallel "$(nproc)"
+    cmake --build build --parallel
 
 # ─── Runtime stage ───────────────────────────────────────────────────────────
 FROM ubuntu:22.04 AS runtime

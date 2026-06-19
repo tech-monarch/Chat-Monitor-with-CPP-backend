@@ -25,8 +25,9 @@ FetchContent_Declare(
 # nlohmann/json
 FetchContent_Declare(
     nlohmann_json
-    URL      https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
-    DOWNLOAD_EXTRACT_TIMESTAMP ON
+    GIT_REPOSITORY https://github.com/nlohmann/json.git
+    GIT_TAG v3.11.3
+    GIT_SHALLOW ON
 )
 
 FetchContent_MakeAvailable(nlohmann_json)
